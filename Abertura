@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Música Automática</title>
+</head>
+<body>
+
+  <!-- 🎧 Áudio de fundo -->
+  <audio id="musicaFundo" src="https://drive.google.com/file/d/1KvXgM9XbRCPoQDuUJuliWINNvfOCM7kJ/preview" autoplay loop></audio>
+
+  <script>
+    // Garante que o áudio vai tentar tocar assim que a página carregar
+    window.addEventListener('load', () => {
+      const musica = document.getElementById('musicaFundo');
+      musica.volume = 0.8; // volume opcional (0 a 1)
+      musica.play().catch(err => {
+        console.log('⚠ Navegador bloqueou a reprodução automática. Ative com interação.');
+      });
+    });
+  </script>
+
+</body>
+</html>
