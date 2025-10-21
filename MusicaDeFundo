@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Música Automática</title>
+</head>
+<body>
+  <!-- 🎵 Música de fundo -->
+  <audio id="bgMusic" src="NOME-DA-SUA-MUSICA.mp3" autoplay loop muted></audio>
+
+  <script>
+    const audio = document.getElementById('bgMusic');
+
+    // Tenta tocar automaticamente ao carregar a página
+    window.addEventListener('load', () => {
+      audio.play().catch(() => {});
+    });
+
+    // Se o navegador bloquear o som, libera no primeiro clique
+    window.addEventListener('click', () => {
+      audio.muted = false;
+      audio.play();
+    });
+  </script>
+</body>
+</html>
