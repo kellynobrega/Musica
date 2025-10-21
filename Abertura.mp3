@@ -8,7 +8,7 @@
 <body>
 
   <!-- 🎧 Áudio de fundo -->
-  <audio id="musicaFundo" src="https://drive.google.com/file/d/1KvXgM9XbRCPoQDuUJuliWINNvfOCM7kJ/preview" autoplay loop></audio>
+  <audio id="musicaFundo" src="https://kellynobrega.github.io/Musica/MusicaDeFundo.mp3" autoplay loop></audio>
 
   <script>
     // Garante que o áudio vai tentar tocar assim que a página carregar
